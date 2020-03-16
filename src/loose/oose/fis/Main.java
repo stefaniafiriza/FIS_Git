@@ -1,5 +1,6 @@
 package loose.oose.fis;
 
+import loose.oose.fis.Change2.A;
 import loose.oose.fis.change.SomethingDifferent;
 import loose.oose.fis.documents.Document;
 import loose.oose.fis.documents.JSON;
@@ -41,9 +42,13 @@ public class Main {
 
         System.out.println(pc2.proceseaza(documente));
 
-        System.out.println(pc1.proceseaza(documente));//Linie adaugata
+        System.out.println(xml);//Linie adaugata in primul branch si modificata in acest branch
+
 
         SomethingDifferent s= new SomethingDifferent();
         s.doSomething();
+
+        A a= new A();
+        System.out.println(a.toString());
     }
 }
